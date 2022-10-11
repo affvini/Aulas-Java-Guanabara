@@ -1,3 +1,4 @@
+import Luta.Luta;
 import Lutador.Lutador;
 
 public class Main {
@@ -16,8 +17,9 @@ public class Main {
        l[5] = new Lutador("Nerdaart", "EUA", 30,1.81,
                105.7,12,2,4);
 
-       l[3].perderLuta();
-       l[3].empatarLuta();
-       l[3].status();
+       Luta UEC01 = new Luta();
+       UEC01.marcarLuta(l[4],l[5]);
+       UEC01.lutar();
+
     }
 }
